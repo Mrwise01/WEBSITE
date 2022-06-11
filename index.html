@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-w idth, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#register">REGISTER</a></li>
+            <li><a href="#login">LOGIN</a></li>
+        </ul>
+
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM<br> ABDULLAHI ABDULAZEEZ</h1>
+            <button class="btn">Try Me</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="image">
+            <img src="IMG1.jpg" alt="">
+            <div id="intro">
+                <h2>ABDULLAHI ABDULAZEEZ</h2>
+                <p>I am Enthusiat person who likes to explore new Technology...</p><br>
+                <h3>Hobbies:-</h3><br>
+                <ul>
+                    <li>Reading</li>
+                    <li>Listening to Music</li>
+                    <li>Travelling</li>
+                    <li>Working</li><br>
+                </ul>
+                <h3>Priorities:-</h3><br>
+                <ul>
+                    <li>My Family</li>
+                    <li>My Life</li>
+                    <li>My Work</li>
+                </ul><br>
+                <h3>Skills:-</h3><br>
+                <ul>
+                    <li>Crypto Expert</li>
+                    <li>Educational Material Sourcing</li>
+                    <li>Frontend Developer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="Name" class="input" placeholder="Enter Your Name">
+            <input type="Email" name="Email" class="input" placeholder=" Enter Your Email">
+            <textarea name="msg" id="msg" cols="50" rows="20" placeholder="Enter Your Message"></textarea>
+            <input type="Submit" value="SEND" id="send">
+        </form>
+    </section>
+    <section id="register">
+        <h2 class="headings">REGISTER BELOW</h2>
+        <form action="form" class="form-reg">
+
+            <label for="fname">FIRST NAME:</label>
+            <input type="text" name="FIRST NAME" class="input-reg" placeholder="First Name" required><br><br>
+            <label for="Lname">LAST NAME:</label>
+            <input type="text" name="last name" class="input-reg" placeholder="Last Name" required><br><br>
+            <label for="No">PHONE NO:</label>
+            <input type="text" name="phone No" class="input-reg" placeholder="Phone"><br><br>
+            <label for="gender">GENDER:</label>
+            <select name="Gender" id="gender" class="drop">
+                <option value="Gnder">GENDER</option>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option><br>
+            </select>
+            <select name="country" id="Country" class="drop">
+                <option value="Country">COUNTRY</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <select name="" id="STATE" class="drop">
+                <option value="STATE">STATE</option>
+                <option value="Kaduna">Kaduna</option>
+            </select>
+            <label for="email"> EMAIL ADDRESS:</label>
+            <input type="Email" name="email adress" class="input-reg" placeholder="Email" required><br><br>
+            <label for="pword">PASSWORD:</label>
+            <input type="Password" name="password" class="input-reg" placeholder="Password"
+                pattern="(!.,&/a) (!.,&[A-Z]) (!.,&/a) (!.,&[a-z] {8,.}"
+                title="an uppercase a lowercase an atleast 8 charcaters" required><br><br>
+            <label for="pword">Confirm Password:</label>
+            <input type="Password" name="password" placeholder="Confrim Password" class="input-reg"
+                pattern="(!.,&/a) (!.,&[A-Z]) (!.,&/a) (!.,&[a-z]) {8,.}"
+                title="an uppercase a lowercase an atleast 8 charcaters" required><br><br>
+            <input type="Submit" value="Submit" id="send-reg">
+        </form>
+    </section>
+
+    <section id="login">
+        <h3 class="headings">LOGIN</h3>
+        <form action="login" class="logins">
+            <label for="email"> EMAIL ADDRESS:</label>
+            <input type="Email" name="email adress" class="login" placeholder="Email" required> <br><br>
+
+            <label for="pword">PASSWORD:</label>
+            <input type="Password" name="password" class="login" placeholder="Password"
+                pattern="(!.,&/a) (!.,&[A-Z]) (!.,&/a) (!.,&[a-z]) {8,.}"
+                title="an uppercase a lowercase an atleast 8 charcaters" required> <br><br>
+
+            <label for="pword">Confirm Password:</label>
+            <input type="Password" name="password" class="login" placeholder="Confrim Password"
+                pattern="(!.,&/a) (!.,&[A-Z]) (!.,&/a) (!.,&[a-z]) {8,.}"
+                title="an uppercase a lowercase an atleast 8 charcaters" required> <br><br>
+
+            <input type="Submit" value="Submit" id="btns">
+
+        </form>
+    </section>
+    <section>
+        <p class="copyright"> Mrwise Copyright &copy; 2022</p>
+    </section>
+</body>
+
+</html>

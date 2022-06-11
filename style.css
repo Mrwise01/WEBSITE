@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*Home section*/
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(img4.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.headings {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid rgb(168, 161, 161);
+    outline: none;
+    transition: 3s ease;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(209, 143, 143);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px whitesmoke, 0 0 15px whitesmoke;
+}
+
+/* abdout section*/
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: ;
+    background: url(img1.jpg) center/cover no-repeat;
+    color: white;
+
+}
+
+#image {
+    display: flex;
+}
+
+#image img {
+    width: 300px;
+    height: 200x;
+    padding-right: 10PX;
+    margin: 20px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    font: bold;
+    color: white;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h1 .headings {
+    color: white;
+}
+
+/*contact section*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0 px;
+}
+
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+
+#send {
+    padding: 10px;
+    margin: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+#send:hover {
+    cursor: pointer;
+    background-color: rgb(209, 143, 143);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px whitesmoke;
+}
+
+/*register section*/
+.form-reg {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(51, 42, 42);
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.input-reg {
+    padding: 12px;
+    margin: 10px;
+    width: 25%;
+    border: none;
+    outline: none;
+}
+
+#send-reg {
+    padding: 10px;
+    margin: 30px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+#send-reg:hover {
+    cursor: pointer;
+    background-color: rgb(209, 143, 143);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px whitesmoke;
+}
+
+.drop {
+    padding: 10px;
+    margin: 12px;
+    width: 7%;
+    font-size: bold;
+}
+
+/*login-section*/
+.logins {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(51, 42, 42);
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.login {
+    padding: 12px;
+    margin: 10px;
+    width: 25%;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+#btns {
+    padding: 10px;
+    margin: 20px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+#btns:hover {
+    cursor: pointer;
+    background-color: rgb(209, 143, 143);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px whitesmoke;
+}
+
+/*footer section*/
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(107, 109, 110);
+}
